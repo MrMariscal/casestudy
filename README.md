@@ -17,7 +17,7 @@ docker run --rm \
 ```
 ./vendor/bin/sail up
 ```
-#Case Study: 
+# Case Study: 
 
 As there were no instructions I have checked this README file, and I also checed the git log which shows a file was added "employee_data.csv" 
 

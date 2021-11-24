@@ -19,7 +19,7 @@ docker run --rm \
 ```
 # Case Study: 
 
-As there were no instructions I have checked this README file, and I also checed the git log which shows a file was added "employee_data.csv" 
+As there were no instructions I have checked this README file, and I also checked the git log which showed a file that was added "employee_data.csv" besides framework files.
 
 Based on that file I have created a model 'Employee' and a migration for it.
 
@@ -34,7 +34,7 @@ There is a seeder for the DB based on the employee_data.csv file included on the
 ./vendor/bin/sail  php artisan db:seed --class=EmployeeSeeder
 ```
 
-Besides the Auth feature test, there is an additional functional test for all of the CRUD operations EmployeesTest, you can run all the tests at: 
+Besides the Auth feature test, there is an additional functional test for all of the CRUD operations **_EmployeesTest_**, you can run all the tests at: 
 
 ```
 ./vendor/bin/sail  php artisan test

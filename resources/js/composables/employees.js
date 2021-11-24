@@ -23,7 +23,7 @@ export default function useEmployees(){
     const storeEmployee = async(data) => {
         errors.value = '';
         try{
-            await axios.post(' /api/employees/', data);
+            await axios.post('/api/employees/', data);
             await router.push({name: 'employees.index'});
         }
         catch(error){
@@ -38,7 +38,7 @@ export default function useEmployees(){
     const updateEmployee = async(id) => {
         errors.value = '';
         try{
-            await axios.put(' /api/employees/' + id, employee.value);
+            await axios.put('/api/employees/' + id, employee.value);
             await router.push({name: 'employees.index'});
         }
         catch(error){

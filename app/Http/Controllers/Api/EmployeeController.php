@@ -17,7 +17,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        return EmployeeResource::collection(Employee::all());
+        return EmployeeResource::collection(Employee::orderBy('last_name')->get());
     }
 
     /**

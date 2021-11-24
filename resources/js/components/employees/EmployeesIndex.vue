@@ -25,16 +25,7 @@
                         <span class="text-xs font-meidum tracking-wider leading-4 text-left text-gray-500">LAST NAME</span>
                     </th>
                     <th class="px-6 py-3 bg-gray-50">
-                        <span class="text-xs font-meidum tracking-wider leading-4 text-left text-gray-500">GENDER</span>
-                    </th>
-                    <th class="px-6 py-3 bg-gray-50">
                         <span class="text-xs font-meidum tracking-wider leading-4 text-left text-gray-500">E-MAIL</span>
-                    </th>
-                    <th class="px-6 py-3 bg-gray-50">
-                        <span class="text-xs font-meidum tracking-wider leading-4 text-left text-gray-500">DATE OF BIRTH</span>
-                    </th>
-                    <th class="px-6 py-3 bg-gray-50">
-                        <span class="text-xs font-meidum tracking-wider leading-4 text-left text-gray-500">PHONE NUMBER</span>
                     </th>
                     <th class="px-6 py-3 bg-gray-50">
                         Actions
@@ -60,20 +51,11 @@
                             {{ employee.last_name }}
                         </td>
                         <td class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
-                            {{ employee.gender }}
-                        </td>
-                        <td class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
                             {{ employee.e_mail }}
                         </td>
                         <td class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
-                            {{ employee.date_of_birth }}
-                        </td>
-                        <td class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
-                            {{ employee.phone_no }}
-                        </td>
-                        <td class="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
                             <router-link :to="{ name: 'employees.edit', params: {id: employee.id } }" 
-                            class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
+                            class="inline-flex mr-2 items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
                             Edit</router-link>
                             <button @click="deleteEmployee(employee.id)"
                             class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Delete</button>

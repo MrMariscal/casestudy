@@ -29,6 +29,8 @@ Based on that file I have created a model 'Employee' and a migration for it.
 
 With that model I have created an API resource to create a CRUD, you can go to the root of the website and you'll have a page to register as a new user and log in, once you're logged in you will be redirected to the /dashboard which is the main page for the CRUD operations.
 
+CRUD operations are separated, Backend resource takes all the operations at persistent layer using Eloquent, and for the Frontend I have used vuejs components with router, tailwind classes were used to give format to the page
+
 There is a seeder for the DB based on the employee_data.csv file included on the project, you can run it at:
 ```
 ./vendor/bin/sail  php artisan db:seed --class=EmployeeSeeder
